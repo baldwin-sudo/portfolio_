@@ -24,18 +24,29 @@ export default function Contact() {
           alt=""
           onClick={handleCloseModal}
         />
-        <ul className="flex flex-col  items-center justify-center h-full       ">
-          <li className="text-white flex items-center justify-start gap-3 w-1/3">
-            <img className="size-12" src="/assets/linkedin.png " alt="" />
-            <p className="font-semibold">Linkedin</p>
+        <ul className="flex flex-row  items-center justify-center h-full  gap-5     ">
+          <li>
+            <a
+              className="text-white flex items-center justify-center gap-3  "
+              href="https://www.linkedin.com/in/el-mehdi-kasmi-04ab45231/"
+            >
+              <img className="size-14" src="/assets/linkedin.png " alt="" />
+            </a>
           </li>
-          <li className="text-white flex items-center justify-start gap-3 w-1/3">
-            <img className="size-12" src="/assets/github-1.png" alt="" />
-            <p className="font-semibold">Github</p>
+          <li>
+            <a
+              className="text-white flex items-center justify-center gap-3    "
+              href=""
+            >
+              {" "}
+              <img className="size-14" src="/assets/github-1.png" alt="" />
+            </a>
           </li>
-          <li className="text-white flex items-center justify-start gap-3 w-1/3">
-            <img className="size-12" src="/assets/gmail.png" alt="" />
-            <p className="font-semibold">Gmail</p>
+          <li>
+            <a className="text-white flex items-center justify-center gap-3   ">
+              {" "}
+              <img className="size-14" src="/assets/gmail.png" alt="" />
+            </a>
           </li>
         </ul>
       </div>
