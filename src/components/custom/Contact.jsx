@@ -36,14 +36,17 @@ export default function Contact() {
           <li>
             <a
               className="text-white flex items-center justify-center gap-3    "
-              href=""
+              href="https://github.com/baldwin-sudo"
             >
               {" "}
               <img className="size-14" src="/assets/github-1.png" alt="" />
             </a>
           </li>
           <li>
-            <a className="text-white flex items-center justify-center gap-3   ">
+            <a
+              className="text-white flex items-center justify-center gap-3  "
+              href="mailto:kasmimehdi561@gmailcom"
+            >
               {" "}
               <img className="size-14" src="/assets/gmail.png" alt="" />
             </a>
