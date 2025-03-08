@@ -7,7 +7,7 @@ function Home() {
       <div className="flex-col   w-fit mx-auto gap-y-5">
         <img
           className="w-12 mx-auto"
-          src="src/assets/src-code.png"
+          src="/assets/src-code.png"
           alt="src code"
         />
         <h1 className="  text-sky-100 text-shadow-2  font-semibold text-4xl box-content w-fit ">

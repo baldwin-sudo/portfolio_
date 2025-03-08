@@ -30,7 +30,7 @@ function App() {
         <Link to="/">
           <img
             className="fixed bottom-0 mb-1 left-0 size-14"
-            src="src/assets/up.png"
+            src="/assets/up.png"
             alt=""
           />
         </Link>
