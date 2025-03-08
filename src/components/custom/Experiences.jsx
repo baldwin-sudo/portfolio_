@@ -65,7 +65,6 @@ export default function Experiences() {
         <CarouselContent className="-ml-4 ">
           <CarouselItem className="basis-full p-1 ">
             <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-semibold">First internship</h3>
               <p className="text-gray-600 mt-2 italic">
                 I am currently pursuing an engineering degree in Artificial
                 Intelligence and Data Science at ENSAM Rabat (Morocco).
