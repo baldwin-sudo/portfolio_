@@ -22,10 +22,10 @@ function Home() {
           <Link to="/projects">Projects</Link>
         </li>
         <li className="font-bold text-sky-50 text-shadow-1 text-5xl mb-1">
-          <Link>Tech Stack</Link>
+          <Link to="/tech-stack">Tech Stack</Link>
         </li>
         <li className="font-bold text-sky-50 text-shadow-1 text-5xl mb-1">
-          <Link>Experiences</Link>
+          <Link to="/experiences">Experiences</Link>
         </li>
       </ul>
     </>
