@@ -24,7 +24,7 @@ export default function Experiences() {
             <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
               <h3 className="text-xl font-semibold">First Internship</h3>
               <h3 className="text-3sm italic font-regular">
-                Health ministry (morocco)
+                The Health ministry (morocco)
               </h3>
               <p className="text-gray-600 mt-2 italic">
                 I contributed to the design and development of an information
@@ -39,7 +39,8 @@ export default function Experiences() {
             <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
               <h3 className="text-xl font-semibold">Second Internship</h3>
               <h3 className="text-3sm italic font-regular">
-                Health Ministry (morocco)
+                The Ministry of National Territorial Planning, Urban Planning,
+                ... (morocco)
               </h3>
               <p className="text-gray-600 mt-2 italic">
                 My internship at the Ministry of Land Planning focused on
