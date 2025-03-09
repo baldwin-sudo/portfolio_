@@ -1,41 +1,49 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom"; // Fix incorrect import
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Fix import
 import * as React from "react";
 import Experiences from "./components/custom/Experiences";
-import { useLocation } from "react-router-dom";
 import Home from "./components/custom/Home";
 import Contact from "./components/custom/Contact";
 import Projects from "./components/custom/Projects";
+import { useLocation } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+
 function App() {
   const location = useLocation();
   const [shouldRender, setShouldRender] = useState(false);
+
   React.useEffect(() => {
-    // Google Analytics
     setShouldRender(location.pathname !== "/");
   }, [location]);
+
   return (
-    <div
-      className="  relative bg-[url('./assets/bg.jpg')] h-fit min-h-screen bg-cover bg-center p-10
-        "
-    >
+    <div className="relative bg-[url('./assets/bg.jpg')] h-fit min-h-screen bg-cover bg-center p-10">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/tech-stack" element={null} />
       </Routes>
-      <Contact />{" "}
-      {shouldRender && (
-        <Link to="/">
-          <img
-            className="fixed bottom-0  left-0 size-12 m-2"
-            src="/assets/up.png"
-            alt=""
-          />
-        </Link>
-      )}
+      <Contact />
+
+      {/* Animated Arrow */}
+      <AnimatePresence>
+        {shouldRender && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="fixed bottom-0 left-0 m-2"
+          >
+            <Link to="/">
+              <img className="size-12" src="/assets/up.png" alt="Go Up" />
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
