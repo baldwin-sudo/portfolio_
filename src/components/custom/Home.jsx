@@ -27,17 +27,27 @@ function Home() {
           />
         </p>
       </div>
-      <ul className="absolute top-2/5 left-1/2 -translate-x-1/2 w-fit mx-auto mt-10 ">
-        <li className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-1 border-1 border-b-3 border-r-3 rounded-sm">
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-1 border-1 border-b-3 border-r-3 rounded-sm">
-          <Link to="/tech-stack">Tech Stack</Link>
-        </li>
-        <li className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-1 border-1 border-b-3 border-r-3 rounded-sm">
-          <Link to="/experiences">Experiences</Link>
-        </li>
-      </ul>
+      <div className="absolute flex flex-col top-2/5 left-1/2 -translate-x-1/2 w-fit mx-auto mt-10 ">
+        <Link
+          className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-2 border-1 border-b-3 border-r-3 rounded-sm"
+          to="/projects"
+        >
+          Projects
+        </Link>
+
+        <Link
+          className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-2 border-1 border-b-3 border-r-3 rounded-sm"
+          to="/tech-stack"
+        >
+          Tech Stack
+        </Link>
+        <Link
+          className="font-semibold text-sky-50 text-shadow-1 text-5xl mb-2 p-2 border-1 border-b-3 border-r-3 rounded-sm"
+          to="/experiences"
+        >
+          Experiences
+        </Link>
+      </div>
     </>
   );
 }
