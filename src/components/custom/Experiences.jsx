@@ -9,7 +9,7 @@ import {
 
 export default function Experiences() {
   return (
-    <div className="w-11/12 max-w-3xl mx-auto text-center">
+    <div className="w-11/12 max-w-3xl mx-auto text-center mt-15 sm:mt-25 lg:mt-35">
       <h2 className="text-3xl text-shadow-2 font-bold text-white mb-6 sm:text-3xl lg:text-5xl">
         Internships
       </h2>
