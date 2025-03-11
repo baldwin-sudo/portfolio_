@@ -39,7 +39,11 @@ function App() {
             className="fixed bottom-0 left-0 m-2"
           >
             <Link to="/">
-              <img className="size-12" src="/assets/up.png" alt="Go Up" />
+              <img
+                className="size-12 rounded-full box-border border-4 hover:opacity-80 hover:border-black"
+                src="/assets/home-1.png"
+                alt="Go Up"
+              />
             </Link>
           </motion.div>
         )}

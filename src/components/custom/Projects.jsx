@@ -34,17 +34,17 @@ export default function Projects() {
       </h2>
       <Carousel
         setApi={setApi}
-        // plugins={[
-        //   Autoplay({
-        //     delay: 2000,
-        //   }),
-        // ]}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
         className="p-4 "
         opts={{
           align: "start",
         }}
       >
-        <CarouselContent className="-ml-4 ">
+        <CarouselContent className="  ">
           <CarouselItem className="basis-full p-1 ">
             <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800  h-60 lg:h-75">
               <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
@@ -119,7 +119,7 @@ export default function Projects() {
               </div>
             </div>
           </CarouselItem>{" "}
-          <CarouselItem className="basis-full p-1">
+          <CarouselItem className="basis-full p-3">
             <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800  h-60 lg:h-75">
               <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
                 Rag based Chatbot
