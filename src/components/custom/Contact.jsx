@@ -41,7 +41,7 @@ export default function Contact() {
                 onClick={handleCloseModal}
               >
                 <img
-                  className="size-14"
+                  className="size-14 sm:size-18 lg:size-22"
                   src="/assets/linkedin.png"
                   alt="LinkedIn"
                 />
@@ -54,7 +54,7 @@ export default function Contact() {
                 onClick={handleCloseModal}
               >
                 <img
-                  className="size-14"
+                  className="size-14 sm:size-18 lg:size-22"
                   src="/assets/github-1.png"
                   alt="GitHub"
                 />
@@ -66,7 +66,11 @@ export default function Contact() {
                 href="mailto:kasmimehdi561@gmail.com"
                 onClick={handleCloseModal}
               >
-                <img className="size-14" src="/assets/gmail.png" alt="Gmail" />
+                <img
+                  className="size-14 sm:size-18 lg:size-22"
+                  src="/assets/gmail.png"
+                  alt="Gmail"
+                />
               </a>
             </li>
           </ul>
