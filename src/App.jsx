@@ -19,7 +19,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className="relative bg-[url('./assets/bg.jpg')] h-fit min-h-screen bg-cover bg-center p-10">
+    <div className="relative bg-[url('/assets/bg-2.jpg')] box-content h-fit min-h-screen bg-cover bg-center p-2  ">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />

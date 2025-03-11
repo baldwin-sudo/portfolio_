@@ -74,10 +74,16 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex gap-10 p-5 justify-center items-center">
-        <p className="text-sky-50 font-light">Resume</p>
+      <div className="fixed left-1/2 -translate-x-1/2 bottom-0 w-full flex gap-10 p-5 justify-center items-center sm:text-2xl">
+        <a
+          href="/assets/KASMI-Elmehdi-CV-v.eng.pdf"
+          className="text-sky-50 font-light"
+          download="KASMI-Elmehdi-CV-v.eng.pdf"
+        >
+          Resume
+        </a>
         <button
-          className="text-sky-50 font-light border-1 px-4 rounded-sm"
+          className="text-sky-50 font-light border-1 px-4 py-1 rounded-sm sm:px-6"
           onClick={handleSayHello}
           ref={sayHelloRef}
         >

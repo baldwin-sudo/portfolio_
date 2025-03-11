@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box !important;
 }
 body {
   height: 100vh;
