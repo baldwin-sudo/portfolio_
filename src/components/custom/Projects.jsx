@@ -34,11 +34,11 @@ export default function Projects() {
       </h2>
       <Carousel
         setApi={setApi}
-        plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]}
+        // plugins={[
+        //   Autoplay({
+        //     delay: 2000,
+        //   }),
+        // ]}
         className="p-4 "
         opts={{
           align: "start",
@@ -46,44 +46,52 @@ export default function Projects() {
       >
         <CarouselContent className="-ml-4 ">
           <CarouselItem className="basis-full p-1 ">
-            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-semibold">Eluxury</h3>
-              <p className="text-gray-600 mt-2 italic">
+            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800  h-60 lg:h-75">
+              <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
+                Eluxury
+              </h3>
+              <p className="text-gray-600 mt-2 italic p-1  sm:text-xl  lg:text-2xl">
                 Luxury clothes shop , developped using React js , and fakeStore
                 Api for the data , deployed using netlify .
               </p>
               <div className="flex  items-center justify-start g-5 flex-col font-bold text-blue-900 py-5">
-                <a className=" " href="https://eluxury.netlify.app/">
+                <a
+                  className=" sm:text-xl  lg:text-2xl "
+                  href="https://eluxury.netlify.app/"
+                >
                   website link
                 </a>
-                <a className=" " href="https://github.com/baldwin-sudo/eluxury">
+                <a
+                  className=" sm:text-xl  lg:text-2xl "
+                  href="https://github.com/baldwin-sudo/eluxury"
+                >
                   github repository
                 </a>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem className="basis-full p-1 ">
-            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-semibold">
+            <div className="bg-white rounded-sm shadow-lg  p-6 text-gray-800 h-60 lg:h-75">
+              <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
                 Custom Deep learning Framework
               </h3>
-              <p className="text-gray-600 mt-2 italic">
+              <p className="text-gray-600 mt-2 italic p-1 sm:text-xl  lg:text-2xl">
                 I made my own Deep learning framework ,inspired by the design of
                 Pytorch's.
               </p>
-              <p className="text-gray-600 mt-2 italic">
+              <p className="text-gray-600 mt-2 italic p-1  sm:text-xl  lg:text-2xl">
                 Implemented Firstly using Python ,and Secondly a minimal version
                 using Rust.
               </p>
-              <div className="flex  items-center justify-start g-5 flex-col font-bold text-blue-900 py-5">
+              <div className="flex  items-center justify-start g-5 flex-col font-bold text-blue-900 py-5 ">
                 <a
-                  className=" "
+                  className=" sm:text-xl  lg:text-2xl "
                   href="https://github.com/baldwin-sudo/deep-learning-framework"
                 >
                   Python github repository{" "}
                 </a>
                 <a
-                  className=" "
+                  className="  sm:text-xl  lg:text-2xl"
                   href="https://github.com/baldwin-sudo/deep-learning-rs"
                 >
                   Rust github repository{" "}
@@ -92,27 +100,31 @@ export default function Projects() {
             </div>
           </CarouselItem>
           <CarouselItem className="basis-full p-1 ">
-            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-semibold">PassKeeper</h3>
-              <p className="text-gray-600 mt-2 italic">
+            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800  h-60 lg:h-75">
+              <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
+                PassKeeper
+              </h3>
+              <p className="text-gray-600 mt-2 italic p-1 sm:text-xl  lg:text-2xl">
                 My own passwords manager , built using React js , Golang and
                 Sqlite .(on going developement)
               </p>
               <div className="flex  items-center justify-start g-5 flex-col font-bold text-blue-900 py-5">
                 <a
-                  className=" "
+                  className="  sm:text-xl  lg:text-2xl"
                   href="https://github.com/baldwin-sudo/PassKeeper"
                 >
                   website link (not deployed yet!)
                 </a>
-                <a className=" ">github repository </a>
+                <a className="  sm:text-xl  lg:text-2xl">github repository </a>
               </div>
             </div>
           </CarouselItem>{" "}
-          <CarouselItem className="basis-full p-1 ">
-            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800">
-              <h3 className="text-xl font-semibold">Rag based Chatbot</h3>
-              <p className="text-gray-600 mt-2 italic">
+          <CarouselItem className="basis-full p-1">
+            <div className="bg-white rounded-sm shadow-lg p-6 text-gray-800  h-60 lg:h-75">
+              <h3 className="text-xl font-semibold sm:text-2xl lg:text-3xl">
+                Rag based Chatbot
+              </h3>
+              <p className="text-gray-600 mt-2 italic p-1 sm:text-xl  lg:text-2xl">
                 An AI-powered chatbot with memory and history, built using
                 LangChain and Streamlit. Just upload your PDFs—Lama will parse
                 them, Elasticsearch will index the content, and OpenAI will
@@ -120,7 +132,7 @@ export default function Projects() {
               </p>
               <div className="flex  items-center justify-start g-5 flex-col font-bold text-blue-900 py-5">
                 <a
-                  className=" "
+                  className="  sm:text-xl  lg:text-2xl"
                   href="https://github.com/baldwin-sudo/baldwin-templates"
                 >
                   github repository
@@ -133,7 +145,7 @@ export default function Projects() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <p className="text-sky-50 text-lg">
+      <p className="text-sky-50 text-lg  sm:text-xl  lg:font-semibold lg:text-3xl">
         {current} of {count}
       </p>
     </div>

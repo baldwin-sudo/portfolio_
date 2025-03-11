@@ -30,20 +30,20 @@ function Home() {
       </div>
       <div className="absolute flex flex-col top-2/5 left-1/2 -translate-x-1/2 w-fit mx-auto mt-10 text-2xl  sm:gap-x-2 sm:!flex-row lg:text-3xl xl:text-4xl lg:gap-x-8  ">
         <Link
-          className="font-semibold text-sky-50 text-shadow-1    mb-2 h-fit  p-2 border-1 border-b-3 border-r-3 rounded-sm  sm:w-42 sm:text-center lg:w-56"
+          className="nav-items font-semibold text-sky-50 text-shadow-1    mb-2 h-fit  p-2 border-1 border-b-3 border-r-3 rounded-sm  sm:w-42 sm:text-center lg:w-56"
           to="/projects"
         >
           Projects
         </Link>
 
         <Link
-          className="font-semibold text-sky-50 text-shadow-1  h-fit  mb-2 p-2 border-1 border-b-3 border-r-3 rounded-sm sm:w-42 sm:text-center lg:w-56"
+          className=" nav-items font-semibold text-sky-50 text-shadow-1  h-fit  mb-2 p-2 border-1 border-b-3 border-r-3 rounded-sm sm:w-42 sm:text-center lg:w-56"
           to="/tech-stack"
         >
           Tech stack
         </Link>
         <Link
-          className="font-semibold text-sky-50 text-shadow-1  h-fit mb-2 p-2  border-1 border-b-3 border-r-3 rounded-sm sm:w-42 sm:text-center lg:w-56"
+          className=" nav-items font-semibold text-sky-50 text-shadow-1  h-fit mb-2 p-2  border-1 border-b-3 border-r-3 rounded-sm sm:w-42 sm:text-center lg:w-56"
           to="/experiences"
         >
           Experiences

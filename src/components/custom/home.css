@@ -1,14 +1,8 @@
-/* .baldwin-icon {
-  position: relative;
+.nav-items {
+  transition: transform 0.3s ease-out;
 }
-.baldwin-icon::after {
-  position: absolute;
-  content: "";
-  background-image: url("/assets/src-code.png");
-  background-size: cover;
-  background-position: center;
-  width: 1rem;
-  height: 1rem;
-  top: -1.5rem;
-  left: -0.5rem;
-} */
+.nav-items:hover {
+  transform: scale(1.1);
+  background: #0c2f79;
+  opacity: 0.9;
+}
